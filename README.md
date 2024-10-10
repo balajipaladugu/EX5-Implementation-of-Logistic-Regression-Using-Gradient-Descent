@@ -54,7 +54,7 @@ def gradient_descent(theta,X,y,alpha,num_iterations):
     h=sigmoid(X.dot(theta))
     gradient=X.T.dot(h-y)/m
     theta-=alpha*gradient
-  return theta
+  return theta 
 theta=gradient_descent(theta,X,y,alpha=0.01,num_iterations=1000)
 def predict(theta,X):
   h=sigmoid(X.dot(theta))
